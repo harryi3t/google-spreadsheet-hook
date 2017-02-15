@@ -4,10 +4,10 @@ python:
 build:
   ci:
     - echo "Running test1"
-    - sed -i "s,{{client_id}},$client_id,g" client_secret.json
-    - sed -i "s,{{client_secret}},$client_secret,g" client_secret.json
-    - mkdir ~/.credentials
-    - mv client_secret.json ~/.credentials/credentials.json
+    - sed -i "s,{{client_id}},$client_id,g" pickled_credentials
+    - sed -i "s,{{client_secret}},$client_secret,g" pickled_credentials
+    - sed -i "s,{{access_token}},$access_token,g" pickled_credentials
+    - sed -i "s,{{refresh_token}},$refresh_token,g" pickled_credentials
     - pip install bs4
     - pip install --upgrade google-api-python-client
     - python script.py
