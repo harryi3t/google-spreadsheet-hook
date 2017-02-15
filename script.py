@@ -9,5 +9,5 @@ if len(tags) != 1:
   exit(1)
   
 rank = tags[0]
-print 'Latest rank is', rank
+print 'Latest rank is', str(rank.string)
 
