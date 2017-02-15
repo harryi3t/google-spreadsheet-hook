@@ -5,3 +5,4 @@ build:
   ci:
     - echo "Running test1"
     - pip install bs4
+    python script.py
