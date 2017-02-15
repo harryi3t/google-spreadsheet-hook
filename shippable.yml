@@ -4,4 +4,5 @@ python:
 build:
   ci:
     - echo "Running test1"
-    - xmllint --version
+    - pip install bs4
+    
