@@ -4,7 +4,9 @@ python:
 build:
   ci:
     - echo "Running test1"
-    - env
+    - sed -i "s,{{client_id}},$client_id,g" client_secret.json
+    - sed -i "s,{{client_secret}},$client_secret,g" client_secret.json
+    - cat client_secret.json
     - pip install bs4
     - python script.py
 env:
