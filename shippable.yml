@@ -3,6 +3,7 @@ python:
   - 2.7
 build:
   ci:
-    - echo "Running test1, home is $HOME"
+    - echo "Running test1"
+    - env
     - pip install bs4
     - python script.py
