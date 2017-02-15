@@ -7,7 +7,7 @@ build:
     - sed -i "s,{{client_id}},$client_id,g" client_secret.json
     - sed -i "s,{{client_secret}},$client_secret,g" client_secret.json
     - mkdir ~/.credentials
-    - mv client_secret.json ~/.credentials/client_secret.json
+    - mv client_secret.json ~/.credentials/credentials.json
     - pip install bs4
     - pip install --upgrade google-api-python-client
     - python script.py
