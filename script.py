@@ -8,6 +8,6 @@ if len(tags) != 1:
   print "Something has changed in website structure. Rank not found"
   exit(1)
   
-rank = tags[1]
+rank = tags[0]
 print 'Latest rank is', rank
 
